@@ -23,6 +23,7 @@ ApplicationWindow {
             if (folder) {
                 folder.text = "Selected: " + folder;
                 console.log("Selected folder:", folder);
+                backend.get_file_name(folder);
             } else {
                 folder.text = "No folder selected";
             }
